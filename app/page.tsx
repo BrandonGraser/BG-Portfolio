@@ -1,29 +1,27 @@
-import Image from "next/image";
-
 const projects = [
   {
     number: "02",
     title: "Bayou Boys",
     type: "Social campaign / art direction",
-    image: "/work/bayou-boys.png",
+    placeholder: "Campaign artwork",
   },
   {
     number: "03",
     title: "Old Lighthouse Co.",
     type: "Web design / brand experience",
-    image: "/work/lighthouse.png",
+    placeholder: "Website mockup",
   },
   {
     number: "04",
     title: "Music Merchandise",
     type: "Apparel / production design",
-    image: "/work/merch.png",
+    placeholder: "Merchandise photography",
   },
   {
     number: "05",
     title: "Alamar",
     type: "Email campaigns / digital design",
-    image: "/work/email.png",
+    placeholder: "Email campaign",
   },
 ];
 
@@ -46,9 +44,9 @@ export default function Home() {
         </div>
         <h1 aria-label="Brandon">BRANDON</h1>
         <div className="hero-collage" aria-hidden="true">
-          <div className="collage-card collage-one"><Image src="/work/bayou-boys.png" alt="" fill sizes="25vw" /></div>
-          <div className="collage-card collage-two"><Image src="/work/merch.png" alt="" fill sizes="28vw" /></div>
-          <div className="collage-card collage-three"><Image src="/work/lighthouse.png" alt="" fill sizes="30vw" /></div>
+          <div className="collage-card collage-one"><span>Image placeholder</span><small>Campaign artwork</small></div>
+          <div className="collage-card collage-two"><span>Image placeholder</span><small>Merchandise</small></div>
+          <div className="collage-card collage-three"><span>Image placeholder</span><small>Web design</small></div>
         </div>
         <p className="hero-intro">I design the work people see—and the systems that help teams make it.</p>
       </section>
@@ -113,7 +111,10 @@ export default function Home() {
       <section className="project-grid" aria-label="More selected projects">
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
-            <div className="project-image"><Image src={project.image} alt={`${project.title} project presentation`} fill sizes="(max-width: 760px) 100vw, 50vw" /></div>
+            <div className="project-image" role="img" aria-label={`${project.title} image placeholder`}>
+              <span>Image placeholder</span>
+              <small>{project.placeholder}</small>
+            </div>
             <div className="project-meta"><span>{project.number}</span><h3>{project.title}</h3><p>{project.type}</p></div>
           </article>
         ))}
