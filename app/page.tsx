@@ -44,9 +44,15 @@ export default function Home() {
         </div>
         <h1 aria-label="Brandon">BRANDON</h1>
         <div className="hero-collage" aria-hidden="true">
-          <div className="collage-card collage-one"><span>Image placeholder</span><small>Campaign artwork</small></div>
-          <div className="collage-card collage-two"><span>Image placeholder</span><small>Merchandise</small></div>
-          <div className="collage-card collage-three"><span>Image placeholder</span><small>Web design</small></div>
+          <div className="collage-card collage-one"><span>Image placeholder</span><small>Poster / portrait</small></div>
+          <div className="collage-card collage-two"><span>Image placeholder</span><small>Campaign / landscape</small></div>
+          <div className="collage-card collage-three"><span>Image placeholder</span><small>Web design / square</small></div>
+          <div className="collage-card collage-four"><span>Image placeholder</span><small>Editorial / portrait</small></div>
+          <div className="collage-card collage-five"><span>Image placeholder</span><small>Identity / landscape</small></div>
+          <div className="collage-card collage-six"><span>Image placeholder</span><small>Detail / portrait</small></div>
+          <div className="collage-card collage-seven"><span>Image placeholder</span><small>Packaging / wide</small></div>
+          <div className="collage-card collage-eight"><span>Image placeholder</span><small>Type study / tall</small></div>
+          <div className="collage-card collage-nine"><span>Image placeholder</span><small>Motion / square</small></div>
         </div>
         <p className="hero-intro">I design the work people see—and the systems that help teams make it.</p>
       </section>
