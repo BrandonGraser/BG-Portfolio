@@ -15,24 +15,25 @@ nav a:hover, .footer-row a:hover { border-color:currentColor; }
 .hero { min-height:1100px; position:relative; overflow:hidden; padding:16px 3.2vw 80px; }
 .eyebrow-row,.section-kicker { display:flex; justify-content:space-between; color:#8d8983; font-size:12px; letter-spacing:.01em; }
 .eyebrow-row { font-family:"Archivo Variable","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:16px; font-weight:400; letter-spacing:normal; line-height:normal; }
-.hero h1 { position:relative; z-index:0; margin:30px 0 0; font-family:Impact,"Arial Narrow",sans-serif; font-size:23.5vw; line-height:.78; letter-spacing:-.055em; font-weight:900; white-space:nowrap; transform:scaleX(1.16); transform-origin:left top; width:86.2%; }
-.hero-collage { position:absolute; z-index:1; inset:300px 0 auto; height:690px; pointer-events:none; }
-.collage-card { position:absolute; overflow:hidden; box-shadow:0 18px 42px rgba(15,10,8,.12); background:#d8d4cc; border:1px solid rgba(22,19,18,.25); transition:transform .35s ease; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:#66615b; text-transform:uppercase; letter-spacing:.14em; }
+.hero h1 { position:relative; z-index:2; margin:30px 0 0; font-family:Impact,"Arial Narrow",sans-serif; font-size:23.5vw; line-height:.78; letter-spacing:-.055em; font-weight:900; white-space:nowrap; transform:scaleX(1.16); transform-origin:left top; width:86.2%; }
+.hero-collage { position:absolute; inset:300px 0 auto; height:690px; pointer-events:none; }
+.collage-card { position:absolute; z-index:3; overflow:hidden; box-shadow:0 18px 42px rgba(15,10,8,.12); background:#d8d4cc; border:1px solid rgba(22,19,18,.25); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:#66615b; text-transform:uppercase; letter-spacing:.14em; transform:rotate(var(--rotate)); }
 .collage-card:nth-child(2n) { background:#cbc7bf; }
 .collage-card:nth-child(3n) { background:#e3dfd7; }
 .collage-card::before,.project-image::before { content:""; position:absolute; inset:12px; border:1px solid rgba(22,19,18,.18); pointer-events:none; }
 .collage-card span,.project-image span { font-size:11px; font-weight:700; }
 .collage-card small,.project-image small { font-size:9px; letter-spacing:.12em; opacity:.7; }
-.collage-one { width:17vw; height:390px; left:1vw; top:92px; transform:rotate(-3deg); animation:float-a 7.4s ease-in-out infinite; }
-.collage-two { width:26vw; height:255px; left:15vw; top:154px; transform:rotate(1.5deg); animation:float-b 8.6s ease-in-out -2.2s infinite; }
-.collage-three { width:20vw; height:335px; left:39vw; top:276px; transform:rotate(-1.3deg); animation:float-c 7.8s ease-in-out -4s infinite; }
-.collage-four { width:14vw; height:405px; left:60vw; top:105px; transform:rotate(2.6deg); animation:float-a 9.2s ease-in-out -3.1s infinite; }
-.collage-five { width:24vw; height:250px; right:1vw; top:324px; transform:rotate(-1.7deg); animation:float-b 8s ease-in-out -5.4s infinite; }
-.collage-six { width:10vw; height:245px; left:31vw; top:34px; transform:rotate(3.5deg); animation:float-c 6.8s ease-in-out -1.4s infinite; }
-.collage-seven { width:19vw; height:175px; left:47vw; top:24px; transform:rotate(-2deg); animation:float-b 7.1s ease-in-out -3.8s infinite; }
-.collage-eight { width:12vw; height:315px; right:17vw; top:174px; transform:rotate(3deg); animation:float-c 9.5s ease-in-out -6s infinite; }
-.collage-nine { width:13vw; height:210px; right:3vw; top:34px; transform:rotate(-2.4deg); animation:float-a 7.7s ease-in-out -4.7s infinite; }
+.collage-one { --rotate:-3deg; width:17vw; height:390px; left:1vw; top:92px; animation:collage-enter 1.15s cubic-bezier(.16,1,.3,1) .05s both,float-a 7.4s ease-in-out 1.2s infinite; --entry-x:-48vw; --entry-y:22vh; }
+.collage-two { --rotate:1.5deg; width:26vw; height:255px; left:15vw; top:154px; animation:collage-enter 1.1s cubic-bezier(.16,1,.3,1) .16s both,float-b 8.6s ease-in-out 1.26s infinite; --entry-x:-12vw; --entry-y:70vh; }
+.collage-three { --rotate:-1.3deg; width:20vw; height:335px; left:39vw; top:276px; animation:collage-enter 1.2s cubic-bezier(.16,1,.3,1) .28s both,float-c 7.8s ease-in-out 1.48s infinite; --entry-x:0; --entry-y:72vh; }
+.collage-four { --rotate:2.6deg; width:14vw; height:405px; left:60vw; top:105px; animation:collage-enter 1.15s cubic-bezier(.16,1,.3,1) .1s both,float-a 9.2s ease-in-out 1.25s infinite; --entry-x:10vw; --entry-y:-55vh; }
+.collage-five { --rotate:-1.7deg; width:24vw; height:250px; right:1vw; top:324px; animation:collage-enter 1.18s cubic-bezier(.16,1,.3,1) .35s both,float-b 8s ease-in-out 1.53s infinite; --entry-x:48vw; --entry-y:35vh; }
+.collage-six { --rotate:3.5deg; z-index:1; width:10vw; height:245px; left:31vw; top:34px; animation:collage-enter 1.05s cubic-bezier(.16,1,.3,1) .22s both,float-c 6.8s ease-in-out 1.27s infinite; --entry-x:-20vw; --entry-y:-48vh; }
+.collage-seven { --rotate:-2deg; width:19vw; height:175px; left:47vw; top:24px; animation:collage-enter 1.15s cubic-bezier(.16,1,.3,1) .04s both,float-b 7.1s ease-in-out 1.19s infinite; --entry-x:0; --entry-y:-48vh; }
+.collage-eight { --rotate:3deg; width:12vw; height:315px; right:17vw; top:174px; animation:collage-enter 1.2s cubic-bezier(.16,1,.3,1) .24s both,float-c 9.5s ease-in-out 1.44s infinite; --entry-x:42vw; --entry-y:-18vh; }
+.collage-nine { --rotate:-2.4deg; width:13vw; height:210px; right:3vw; top:34px; animation:collage-enter 1.08s cubic-bezier(.16,1,.3,1) .14s both,float-a 7.7s ease-in-out 1.22s infinite; --entry-x:52vw; --entry-y:-42vh; }
 
+@keyframes collage-enter { from { opacity:0; transform:translate(var(--entry-x),var(--entry-y)) rotate(var(--rotate)) scale(.92); } to { opacity:1; transform:translate(0,0) rotate(var(--rotate)) scale(1); } }
 @keyframes float-a { 0%,100% { translate:0 0; } 50% { translate:0 -18px; } }
 @keyframes float-b { 0%,100% { translate:0 0; } 45% { translate:8px -24px; } }
 @keyframes float-c { 0%,100% { translate:0 0; } 55% { translate:-7px -15px; } }
