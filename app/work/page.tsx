@@ -5,7 +5,7 @@ import SiteHeader from "../components/SiteHeader";
 const projects = [
   { number: "01", title: "Keystone Command Center", type: "Product design / internal systems", format: "landscape", href: "/work/keystone", image: "/work/keystone/analytics-studio.png", alt: "Keystone Command Center campaign analytics dashboard in a studio setting" },
   { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/the-bayou/chickn.png" },
-  { number: "03", title: "Polysynth", type: "Identity concept / campaign system", format: "square", href: "/work/polysynth", image: "/work/polysynth/brand-sheet.png", alt: "Polysynth identity system and geometric P mark" },
+  { number: "03", title: "Polysynth", type: "Identity concept / campaign system", format: "square", href: "/work/polysynth", image: "/work/polysynth/work-thumbnail.png", alt: "Polysynth identity system with geometric P mark and oversized wordmark" },
   { number: "04", title: "Old Lighthouse Co.", type: "Web design / brand experience", format: "square" },
   { number: "05", title: "Music Merchandise", type: "Apparel / production design", format: "wide" },
   { number: "06", title: "Alamar", type: "Email campaigns / digital design", format: "portrait" },
