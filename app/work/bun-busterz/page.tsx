@@ -8,25 +8,27 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bun Busterz — Brandon Graser",
     description: "A bold, playful restaurant identity built around a customizable gourmet hot dog experience.",
-    images: [{ url: "/work/bun-busterz/menu-mockup.png", alt: "Bun Busterz printed menu system" }],
+    images: [{ url: "/work/bun-busterz/logo-thumbnail.png", alt: "Bun Busterz logo on a black background" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bun Busterz — Brandon Graser",
     description: "A bold, playful restaurant identity built around a customizable gourmet hot dog experience.",
-    images: ["/work/bun-busterz/menu-mockup.png"],
+    images: ["/work/bun-busterz/logo-thumbnail.png"],
   },
 };
 
 const images = [
-  { src: "/work/bun-busterz/menu-mockup.png", alt: "Bun Busterz menu system presented as printed restaurant collateral", width: 1536, height: 1024 },
+  { src: "/work/bun-busterz/logo-thumbnail.png", alt: "Bun Busterz logo on a black background", width: 9600, height: 9600 },
   { src: "/work/bun-busterz/logo-main.png", alt: "Bun Busterz primary logo and hot dog mark", width: 9600, height: 9600 },
+  { src: "/work/bun-busterz/packaging-box-cup.png", alt: "Bun Busterz branded hot dog box and drink cup", width: 1364, height: 1001 },
+  { src: "/work/bun-busterz/packaging-bag.png", alt: "Bun Busterz branded takeout bag", width: 528, height: 783 },
+  { src: "/work/bun-busterz/packaging-utensils.png", alt: "Bun Busterz branded kraft utensil sleeve", width: 959, height: 643 },
   { src: "/work/bun-busterz/storefront.png", alt: "Bun Busterz storefront signage in Easton, Pennsylvania", width: 638, height: 510 },
   { src: "/work/bun-busterz/food-photo.png", alt: "Bun Busterz sandwich served on branded paper", width: 510, height: 510 },
   { src: "/work/bun-busterz/menu-wall.png", alt: "Bun Busterz illustrated ordering system installed inside the restaurant", width: 677, height: 510 },
   { src: "/work/bun-busterz/menu-build.jpg", alt: "Bun Busterz build-your-own and signature menu design", width: 3841, height: 2161 },
   { src: "/work/bun-busterz/menu-toppings.jpg", alt: "Bun Busterz toppings, sauces, sides, and drinks menu design", width: 3841, height: 2161 },
-  { src: "/work/bun-busterz/packaging-system.png", alt: "Bun Busterz packaging, apparel, and merchandise system", width: 2420, height: 1870 },
 ];
 
 export default function BunBusterzCaseStudy() {
