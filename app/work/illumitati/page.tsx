@@ -8,19 +8,22 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Illumitati — Brandon Graser",
     description: "A portfolio experience built inside a surreal, late-1990s computer interface.",
-    images: [{ url: "/work/illumitati/desktop.jpg", alt: "Illumitati website designed as a vintage computer desktop" }],
+    images: [{ url: "/work/illumitati/cover.png", alt: "Illumitati symbol over a surreal image of a translucent iMac in a stream" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Illumitati — Brandon Graser",
     description: "A portfolio experience built inside a surreal, late-1990s computer interface.",
-    images: ["/work/illumitati/desktop.jpg"],
+    images: ["/work/illumitati/cover.png"],
   },
 };
 
 const images = [
-  { src: "/work/illumitati/login.jpg", alt: "Illumitati OS X login screen presented inside a translucent blue iMac", width: 1280, height: 720 },
-  { src: "/work/illumitati/desktop.jpg", alt: "Illumitati portfolio desktop with draggable icons and vintage computer imagery", width: 1280, height: 720 },
+  { src: "/work/illumitati/cover.png", alt: "Illumitati symbol over a surreal image of a translucent iMac in a stream", width: 1200, height: 1200, layout: "full" },
+  { src: "/work/illumitati/login.jpg", alt: "Illumitati OS X login screen presented inside a translucent blue iMac", width: 1280, height: 720, layout: "half" },
+  { src: "/work/illumitati/desktop.jpg", alt: "Illumitati portfolio desktop with draggable icons and vintage computer imagery", width: 1280, height: 720, layout: "half" },
+  { src: "/work/illumitati/work-window.png", alt: "Illumitati work archive displayed in a retro desktop window", width: 969, height: 730, layout: "half" },
+  { src: "/work/illumitati/merch-window.png", alt: "Illumitati merchandise displayed inside a custom retro browser window", width: 827, height: 623, layout: "half" },
 ];
 
 export default function IllumitatiCaseStudy() {
@@ -42,10 +45,10 @@ export default function IllumitatiCaseStudy() {
           </dl>
         </div>
       </section>
-      <section className="keystone-gallery">
+      <section className="illumitati-gallery">
         {images.map((image, index) => (
-          <figure key={image.src}>
-            <Image src={image.src} alt={image.alt} width={image.width} height={image.height} priority={index === 0} sizes="94vw" />
+          <figure className={image.layout === "full" ? "illumitati-full" : undefined} key={image.src}>
+            <Image src={image.src} alt={image.alt} width={image.width} height={image.height} priority={index === 0} sizes={image.layout === "full" ? "94vw" : "(max-width: 760px) 92vw, 46vw"} />
           </figure>
         ))}
       </section>
