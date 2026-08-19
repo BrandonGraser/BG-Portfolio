@@ -23,6 +23,9 @@ nav a:hover, .footer-row a:hover { border-color:currentColor; }
 .collage-card::before,.project-image::before { content:""; position:absolute; inset:12px; border:1px solid rgba(22,19,18,.18); pointer-events:none; }
 .collage-card span,.project-image span { font-size:11px; font-weight:700; }
 .collage-card small,.project-image small { font-size:9px; letter-spacing:.12em; opacity:.7; }
+.collage-image { background:transparent; }
+.collage-image::before { display:none; }
+.collage-image img { display:block; width:100%; height:100%; object-fit:cover; }
 .collage-one { --rotate:-3deg; width:17vw; height:390px; left:1vw; top:92px; animation:collage-enter 1.15s cubic-bezier(.16,1,.3,1) .05s both,float-a 7.4s ease-in-out 1.2s infinite; --entry-x:-48vw; --entry-y:22vh; }
 .collage-two { --rotate:1.5deg; width:26vw; height:255px; left:15vw; top:154px; animation:collage-enter 1.1s cubic-bezier(.16,1,.3,1) .16s both,float-b 8.6s ease-in-out 1.26s infinite; --entry-x:-12vw; --entry-y:70vh; }
 .collage-three { --rotate:-1.3deg; width:20vw; height:335px; left:39vw; top:276px; animation:collage-enter 1.2s cubic-bezier(.16,1,.3,1) .28s both,float-c 7.8s ease-in-out 1.48s infinite; --entry-x:0; --entry-y:72vh; }
