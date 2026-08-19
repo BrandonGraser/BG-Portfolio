@@ -22,7 +22,7 @@ const images = [
   { src: "/work/bun-busterz/logo-thumbnail.png", alt: "Bun Busterz logo on a black background", width: 9600, height: 9600 },
   { src: "/work/bun-busterz/packaging-box-cup.png", alt: "Bun Busterz branded hot dog box and drink cup", width: 1364, height: 1001 },
   { src: "/work/bun-busterz/packaging-bag.png", alt: "Bun Busterz branded takeout bag", width: 528, height: 783 },
-  { src: "/work/bun-busterz/packaging-utensils.png", alt: "Bun Busterz branded kraft utensil sleeve", width: 1517, height: 1037 },
+  { src: "/work/bun-busterz/packaging-utensils.png", alt: "Bun Busterz branded kraft utensil sleeve", width: 539, height: 643 },
   { src: "/work/bun-busterz/storefront.png", alt: "Bun Busterz storefront signage in Easton, Pennsylvania", width: 1402, height: 1122 },
   { src: "/work/bun-busterz/food-photo.png", alt: "Bun Busterz sandwich served on branded paper", width: 510, height: 510 },
   { src: "/work/bun-busterz/menu-wall.png", alt: "Bun Busterz illustrated ordering system installed inside the restaurant", width: 1447, height: 1087 },
