@@ -37,10 +37,10 @@ export default function BayouCaseStudy() {
         </div>
       </section>
       <section className="bayou-gallery">
-        <figure className="bayou-gallery-wide"><Image src="/work/the-bayou/nashville-chicken.jpg" alt="Nashville chicken sandwich promotional artwork" width={2160} height={2700} priority sizes="(max-width: 760px) 92vw, 74vw" /></figure>
-        <figure><Image src="/work/the-bayou/bourbon-berries.jpg" alt="Bourbon and berries drink-of-the-week campaign artwork" width={2160} height={2700} sizes="(max-width: 760px) 92vw, 36vw" /></figure>
-        <figure><Image src="/work/the-bayou/poutine-fries.png" alt="Poutine fries promotional artwork" width={1728} height={2160} sizes="(max-width: 760px) 92vw, 36vw" /></figure>
-        <figure className="bayou-gallery-wide"><Image src="/work/the-bayou/wing-night.jpg" alt="Wing Night promotional artwork" width={3240} height={4050} sizes="(max-width: 760px) 92vw, 74vw" /></figure>
+        <figure><Image src="/work/the-bayou/nashville-chicken.jpg" alt="Nashville chicken sandwich promotional artwork" width={2160} height={2700} priority sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
+        <figure><Image src="/work/the-bayou/bourbon-berries.jpg" alt="Bourbon and berries drink-of-the-week campaign artwork" width={2160} height={2700} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
+        <figure><Image src="/work/the-bayou/poutine-fries.png" alt="Poutine fries promotional artwork" width={1728} height={2160} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
+        <figure><Image src="/work/the-bayou/wing-night.jpg" alt="Wing Night promotional artwork" width={3240} height={4050} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
       </section>
       <div className="simple-footer"><span>© 2026 Brandon Graser</span><a href="/work">Back to work</a></div>
     </main>
