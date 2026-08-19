@@ -3,10 +3,10 @@ import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 
 const projects = [
-  { number: "01", title: "Keystone Command Center", type: "Product design / internal systems", format: "landscape", href: "/work/keystone", image: "/work/keystone/analytics-studio.png", alt: "Keystone Command Center campaign analytics dashboard in a studio setting" },
-  { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/the-bayou/chickn.png" },
-  { number: "03", title: "Polysynth", type: "Identity concept / campaign system", format: "square", href: "/work/polysynth", image: "/work/polysynth/work-thumbnail.png", alt: "Polysynth identity system with geometric P mark and oversized wordmark" },
-  { number: "04", title: "Bun Busterz", type: "Brand identity / restaurant experience", format: "square", href: "/work/bun-busterz", image: "/work/bun-busterz/logo-thumbnail.png", alt: "Bun Busterz logo on a black background" },
+  { number: "01", title: "Keystone Command Center", type: "Product design / internal systems", format: "landscape", href: "/work/keystone", image: "/work/thumbnails/keystone.webp", alt: "Keystone Command Center campaign analytics dashboard in a studio setting" },
+  { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/thumbnails/the-bayou.webp" },
+  { number: "03", title: "Polysynth", type: "Identity concept / campaign system", format: "square", href: "/work/polysynth", image: "/work/thumbnails/polysynth.webp", alt: "Polysynth identity system with geometric P mark and oversized wordmark" },
+  { number: "04", title: "Bun Busterz", type: "Brand identity / restaurant experience", format: "square", href: "/work/bun-busterz", image: "/work/thumbnails/bun-busterz.webp", alt: "Bun Busterz logo on a black background" },
   { number: "05", title: "Music Merchandise", type: "Apparel / production design", format: "wide" },
   { number: "06", title: "Alamar", type: "Email campaigns / digital design", format: "portrait" },
   { number: "07", title: "Selected Identities", type: "Brand systems / identity", format: "landscape" },
@@ -16,11 +16,11 @@ export default function WorkPage() {
   return (
     <main className="gallery-page"><SiteHeader />
       <section className="portfolio-wall" aria-label="Selected portfolio projects">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <article className={`portfolio-tile tile-${project.format}`} key={project.title}>
             {project.image ? (
               <Link className="tile-project-link" href={project.href ?? "/work"} aria-label={`View ${project.title} case study`}>
-                <Image className="tile-project-image" src={project.image} alt={project.alt ?? `${project.title} project cover`} fill sizes="(max-width: 760px) 100vw, (max-width: 980px) 50vw, 33vw" />
+                <Image className="tile-project-image" src={project.image} alt={project.alt ?? `${project.title} project cover`} fill priority={index === 0} quality={75} sizes="(max-width: 760px) 100vw, (max-width: 980px) 50vw, 33vw" />
                 <div className="tile-caption"><span>{project.number}</span><h1>{project.title}</h1><p>{project.type}</p></div>
               </Link>
             ) : (
