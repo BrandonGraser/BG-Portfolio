@@ -4,7 +4,7 @@ import SiteHeader from "../components/SiteHeader";
 
 const projects = [
   { number: "01", title: "Keystone Command Center", type: "Product design / development", format: "landscape" },
-  { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/the-bayou/nashville-chicken.jpg" },
+  { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/the-bayou/chickn.png" },
   { number: "03", title: "Old Lighthouse Co.", type: "Web design / brand experience", format: "square" },
   { number: "04", title: "Music Merchandise", type: "Apparel / production design", format: "wide" },
   { number: "05", title: "Alamar", type: "Email campaigns / digital design", format: "portrait" },

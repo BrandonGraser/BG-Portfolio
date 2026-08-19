@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Bayou — Brandon Graser",
     description: "A social-first restaurant campaign built from original food photography.",
-    images: [{ url: "/work/the-bayou/nashville-chicken.jpg", alt: "The Bayou Nashville chicken sandwich campaign" }],
+    images: [{ url: "/work/the-bayou/chickn.png", alt: "The Bayou Nashville chicken sandwich campaign" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Bayou — Brandon Graser",
     description: "A social-first restaurant campaign built from original food photography.",
-    images: ["/work/the-bayou/nashville-chicken.jpg"],
+    images: ["/work/the-bayou/chickn.png"],
   },
 };
 
