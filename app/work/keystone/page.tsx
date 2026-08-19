@@ -8,22 +8,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Keystone Command Center — Brandon Graser",
     description: "Product design and development for a music marketing team’s central workspace.",
-    images: [{ url: "/work/keystone/campaign-analytics.png", alt: "Keystone Command Center campaign analytics dashboard" }],
+    images: [{ url: "/work/keystone/analytics-studio.png", alt: "Keystone Command Center campaign analytics dashboard in a studio setting" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Keystone Command Center — Brandon Graser",
     description: "Product design and development for a music marketing team’s central workspace.",
-    images: ["/work/keystone/campaign-analytics.png"],
+    images: ["/work/keystone/analytics-studio.png"],
   },
 };
 
 const screens = [
-  { src: "/work/keystone/campaign-analytics.png", alt: "Cross-platform music campaign analytics and performance trends" },
-  { src: "/work/keystone/content-performance.png", alt: "Content inventory and performance dashboard across managed social accounts" },
-  { src: "/work/keystone/task-workflow.png", alt: "Team task dashboard with assignment, status, due date, and search controls" },
-  { src: "/work/keystone/cover-art-queue.png", alt: "Cover-art production queue with delivery status and final artwork" },
-  { src: "/work/keystone/workflow-map.png", alt: "Visual map of connected content-production workflows" },
+  { src: "/work/keystone/analytics-studio.png", alt: "Keystone campaign analytics dashboard presented on a studio monitor" },
+  { src: "/work/keystone/tasks-studio.png", alt: "Keystone task assignment system presented in a music studio" },
+  { src: "/work/keystone/coverarts-studio.png", alt: "Keystone cover-art production queue presented in a creative studio" },
 ];
 
 export default function KeystoneCaseStudy() {
@@ -44,10 +42,10 @@ export default function KeystoneCaseStudy() {
           </dl>
         </div>
       </section>
-      <section className="bayou-gallery" aria-label="Keystone Command Center product screens">
+      <section className="keystone-gallery" aria-label="Keystone Command Center product screens">
         {screens.map((screen, index) => (
           <figure key={screen.src}>
-            <Image src={screen.src} alt={screen.alt} width={1274} height={717} priority={index === 0} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 31vw" />
+            <Image src={screen.src} alt={screen.alt} width={1672} height={941} priority={index === 0} sizes="94vw" />
           </figure>
         ))}
       </section>
