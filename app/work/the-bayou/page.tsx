@@ -37,7 +37,7 @@ export default function BayouCaseStudy() {
         </div>
       </section>
       <section className="bayou-gallery">
-        <figure><Image src="/work/the-bayou/nashville-chicken.jpg" alt="Nashville chicken sandwich promotional artwork" width={2160} height={2700} priority sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
+        <figure><Image src="/work/the-bayou/chickn.png" alt="Nashville chicken sandwich promotional artwork" width={2160} height={2016} priority sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
         <figure className="bayou-gallery-landscape"><Image src="/work/the-bayou/wing-night.jpg" alt="Wing Night promotional artwork" width={3240} height={2160} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 92vw, 62vw" /></figure>
         <figure><Image src="/work/the-bayou/bourbon-berries.jpg" alt="Bourbon and berries drink-of-the-week campaign artwork" width={2160} height={2700} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
         <figure><Image src="/work/the-bayou/poutine-fries.png" alt="Poutine fries promotional artwork" width={1728} height={2160} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 25vw" /></figure>
