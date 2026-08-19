@@ -7,9 +7,10 @@ const projects = [
   { number: "02", title: "The Bayou", type: "Social campaign / food photography", format: "portrait", href: "/work/the-bayou", image: "/work/thumbnails/the-bayou.webp" },
   { number: "03", title: "Polysynth", type: "Identity concept / campaign system", format: "square", href: "/work/polysynth", image: "/work/thumbnails/polysynth.webp", alt: "Polysynth identity system with geometric P mark and oversized wordmark" },
   { number: "04", title: "Bun Busterz", type: "Brand identity / restaurant experience", format: "square", href: "/work/bun-busterz", image: "/work/thumbnails/bun-busterz.webp", alt: "Bun Busterz logo on a black background" },
-  { number: "05", title: "Music Merchandise", type: "Apparel / production design", format: "wide" },
-  { number: "06", title: "Alamar", type: "Email campaigns / digital design", format: "portrait" },
-  { number: "07", title: "Selected Identities", type: "Brand systems / identity", format: "landscape" },
+  { number: "05", title: "Illumitati", type: "Web design / interactive experience", format: "landscape", href: "/work/illumitati", image: "/work/thumbnails/illumitati.webp", alt: "Illumitati website designed as a nostalgic computer desktop" },
+  { number: "06", title: "Music Merchandise", type: "Apparel / production design", format: "wide" },
+  { number: "07", title: "Alamar", type: "Email campaigns / digital design", format: "portrait" },
+  { number: "08", title: "Selected Identities", type: "Brand systems / identity", format: "landscape" },
 ];
 
 export default function WorkPage() {
