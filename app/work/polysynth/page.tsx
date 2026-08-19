@@ -27,50 +27,29 @@ const assets = [
 
 export default function PolysynthCaseStudy() {
   return (
-    <main className="polysynth-case">
+    <main className="bayou-case">
       <SiteHeader />
-      <section className="polysynth-hero">
-        <div className="polysynth-kicker">
+      <section className="bayou-intro">
+        <div className="bayou-heading">
           <span>03 · Identity concept / campaign system</span>
-          <span>2026</span>
+          <h1>Polysynth</h1>
         </div>
-        <h1>polysynth</h1>
-        <div className="polysynth-hero-meta">
-          <p>Multi-Material<br />Resin Printing</p>
-          <p>One print.<br />Zero assembly.</p>
-        </div>
-      </section>
-
-      <section className="polysynth-story">
-        <div>
-          <span className="section-label">The beginning</span>
-          <p className="polysynth-lead">The exploration began while Polysynth was still in the early stages of developing a new kind of resin printer—one capable of combining multiple materials in a single print.</p>
-        </div>
-        <div className="polysynth-body">
-          <p>The goal was a visual identity that felt as precise and forward-looking as the technology itself: clean, sleek, modern, and credible enough to introduce an entirely new product category.</p>
-          <p>The symbol is assembled from distinct geometric parts. Each shape represents a different material entering the same print, while the complete mark resolves into one unified form.</p>
-          <p>Early color studies pushed the material idea more literally. Ultimately, the solid monochrome system felt sharper and more ownable—letting the structure of the mark communicate the concept without unnecessary noise.</p>
+        <div className="bayou-copy">
+          <p>The identity exploration began while Polysynth was still in the early stages of developing a new kind of resin printer—one capable of combining multiple materials in a single print. The goal was a clean, sleek system that felt as precise and forward-looking as the technology itself.</p>
+          <p>The symbol is assembled from distinct geometric parts, with each shape representing a different material entering the same print. Early color studies pushed that idea more literally, but the final monochrome direction felt sharper and allowed the structure of the mark to communicate without unnecessary noise.</p>
           <dl>
-            <div><dt>Focus</dt><dd>Identity, art direction, campaign exploration</dd></div>
+            <div><dt>Role</dt><dd>Identity, art direction, campaign exploration</dd></div>
             <div><dt>Context</dt><dd>Early-stage technology startup</dd></div>
           </dl>
         </div>
       </section>
-
-      <figure className="polysynth-brand-sheet">
-        <Image src="/work/polysynth/brand-sheet.png" alt="Polysynth brand sheet showing wordmark and geometric P symbol" width={3500} height={3000} priority sizes="100vw" />
-      </figure>
-
-      <section className="polysynth-statement" aria-label="Campaign statement">
-        <span>ONE PRINT.</span>
-        <span>ZERO ASSEMBLY.</span>
-        <span>UP TO 8 MATERIALS.</span>
-      </section>
-
-      <section className="polysynth-gallery" aria-label="Polysynth campaign applications">
+      <section className="bayou-gallery" aria-label="Polysynth campaign applications">
+        <figure>
+          <Image src="/work/polysynth/brand-sheet.png" alt="Polysynth brand sheet showing wordmark and geometric P symbol" width={3500} height={3000} priority sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 31vw" />
+        </figure>
         {assets.map((asset) => (
           <figure key={asset.src}>
-            <Image src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} sizes="(max-width: 760px) 92vw, 50vw" />
+            <Image src={asset.src} alt={asset.alt} width={asset.width} height={asset.height} sizes="(max-width: 680px) 92vw, (max-width: 1100px) 46vw, 31vw" />
           </figure>
         ))}
       </section>
